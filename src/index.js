@@ -45,8 +45,8 @@ console.log('project wired!')
 
 // ✅ STEP 1: Declare variables pointing to the relevant DOM elements, using any of the selectors you have learned.
 
-// STEP 2A: Using your selectors, update the text contents of the relevant elements, matching the design file.
-// STEP 2B: Find the correct texts for the elements inside the data object in `src/index.js`.
+// ✅ STEP 2A: Using your selectors, update the text contents of the relevant elements, matching the design file.
+// ✅ STEP 2B: Find the correct texts for the elements inside the data object in `src/index.js`.
 
 // STEP 3A: Give the anchor tags inside the nav an italic style by adding the classname `italic` to them alone.
 // STEP 3B: Give the anchor tag inside the footer a bolder appearence by adding the classname `bold` to it alone.
@@ -62,41 +62,80 @@ const headerImg = document.querySelector('#logo-img');
 // > Nav
 const navLinks = document.querySelectorAll('nav a');
 const navLinksArray = Array.from(navLinks);
+navLinksArray[0].textContent = siteContent['nav']['nav-item-1'];
+navLinksArray[1].textContent = siteContent['nav']['nav-item-2'];
+navLinksArray[2].textContent = siteContent['nav']['nav-item-3'];
+navLinksArray[3].textContent = siteContent['nav']['nav-item-4'];
+navLinksArray[4].textContent = siteContent['nav']['nav-item-5'];
+navLinksArray[5].textContent = siteContent['nav']['nav-item-6'];
 
 
 // CTA
 const ctaHeading = document.querySelector('.cta-text h1');
 const ctaButton = document.querySelector('.cta-text button');
 const ctaImg = document.querySelector('#cta-img');
+ctaHeading.textContent = siteContent['cta']['h1'];
+ctaButton.textContent = siteContent['cta']['button'];
 
 
 // MAIN CONTENT
 
 // > Top Content
-const topText = document.querySelectorAll('.text-content');
+const topText = document.querySelectorAll('.top-content .text-content');
 const topTextArray = Array.from(topText);
 
 const topTextFirst = topTextArray[0];
+const topTextFirstHeader = topTextFirst.querySelector('h4');
+topTextFirstHeader.textContent = siteContent['main-content']['features-h4'];
+const topTextFirstPara = topTextFirst.querySelector('p');
+topTextFirstPara.textContent = siteContent['main-content']['features-content'];
+
 const topTextSecond = topTextArray[1];
+const topTextSecondHeader = topTextSecond.querySelector('h4');
+topTextSecondHeader.textContent = siteContent['main-content']['about-h4'];
+const topTextSecondPara = topTextSecond.querySelector('p');
+topTextSecondPara.textContent = siteContent['main-content']['about-content'];
 
 // > Middle Content
 const middleImg = document.querySelector('.middle-img');
 
 // > Bottom Content
-const bottomText = document.querySelectorAll('.text-content');
+const bottomText = document.querySelectorAll('.bottom-content .text-content');
 const bottomTextArray = Array.from(bottomText);
 
 const bottomTextFirst = bottomTextArray[0];
+const bottomTextFirstHeader = bottomTextFirst.querySelector('h4');
+bottomTextFirstHeader.textContent = siteContent['main-content']['services-h4'];
+const bottomTextFirstPara = bottomTextFirst.querySelector('p');
+bottomTextFirstPara.textContent = siteContent['main-content']['services-content'];
+
 const bottomTextSecond = bottomTextArray[1];
+const bottomTextSecondHeader = bottomTextSecond.querySelector('h4');
+bottomTextSecondHeader.textContent = siteContent['main-content']['product-h4'];
+const bottomTextSecondPara = bottomTextSecond.querySelector('p');
+bottomTextSecondPara.textContent = siteContent['main-content']['product-content'];
+
 const bottomTextThird = bottomTextArray[2];
+const bottomTextThirdHeader = bottomTextThird.querySelector('h4');
+bottomTextThirdHeader.textContent = siteContent['main-content']['vision-h4'];
+const bottomTextThirdPara = bottomTextThird.querySelector('p');
+bottomTextThirdPara.textContent = siteContent['main-content']['vision-content'];
 
 
 // CONTACT
 const contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
 const address = document.querySelector('.contact p:nth-of-type(1)');
+address.textContent = siteContent['contact']['address'];
+
 const phone = document.querySelector('.contact p:nth-of-type(2)');
+phone.textContent = siteContent['contact']['phone'];
+
 const email = document.querySelector('.contact p:nth-of-type(3)');
+email.textContent = siteContent['contact']['email'];
 
 
 // FOOTER
 const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent['footer']['copyright'];
