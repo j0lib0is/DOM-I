@@ -48,8 +48,8 @@ console.log('project wired!')
 // ✅ STEP 2A: Using your selectors, update the text contents of the relevant elements, matching the design file.
 // ✅ STEP 2B: Find the correct texts for the elements inside the data object in `src/index.js`.
 
-// STEP 3A: Give the anchor tags inside the nav an italic style by adding the classname `italic` to them alone.
-// STEP 3B: Give the anchor tag inside the footer a bolder appearence by adding the classname `bold` to it alone.
+// ✅ STEP 3A: Give the anchor tags inside the nav an italic style by adding the classname `italic` to them alone.
+// ✅ STEP 3B: Give the anchor tag inside the footer a bolder appearence by adding the classname `bold` to it alone.
 
 // STEP 4A: Make the img tags on the page display the correct images by editing their `src` attribute.
 // STEP 4B: Find the correct URLs for the images inside the data object in `src/index.js`.
@@ -62,6 +62,7 @@ const headerImg = document.querySelector('#logo-img');
 // > Nav
 const navLinks = document.querySelectorAll('nav a');
 const navLinksArray = Array.from(navLinks);
+navLinks.forEach(link => link.classList.add('italic'));
 navLinksArray[0].textContent = siteContent['nav']['nav-item-1'];
 navLinksArray[1].textContent = siteContent['nav']['nav-item-2'];
 navLinksArray[2].textContent = siteContent['nav']['nav-item-3'];
@@ -138,4 +139,5 @@ email.textContent = siteContent['contact']['email'];
 
 // FOOTER
 const footerLink = document.querySelector('footer a');
+footerLink.classList.add('bold');
 footerLink.textContent = siteContent['footer']['copyright'];
