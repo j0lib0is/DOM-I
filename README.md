@@ -28,7 +28,7 @@ Inside `src/index.js` there is declared an object literal containing all the dat
 
 ### Create selectors to access the relevant elements
 
--   [ ] Declare variables pointing to the relevant DOM elements, using any of the selectors you have learned.
+-   [x] Declare variables pointing to the relevant DOM elements, using any of the selectors you have learned.
 
 ### Add text contents
 

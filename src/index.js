@@ -40,3 +40,63 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+// INSTRUCTIONS
+
+// ✅ STEP 1: Declare variables pointing to the relevant DOM elements, using any of the selectors you have learned.
+
+// STEP 2A: Using your selectors, update the text contents of the relevant elements, matching the design file.
+// STEP 2B: Find the correct texts for the elements inside the data object in `src/index.js`.
+
+// STEP 3A: Give the anchor tags inside the nav an italic style by adding the classname `italic` to them alone.
+// STEP 3B: Give the anchor tag inside the footer a bolder appearence by adding the classname `bold` to it alone.
+
+// STEP 4A: Make the img tags on the page display the correct images by editing their `src` attribute.
+// STEP 4B: Find the correct URLs for the images inside the data object in `src/index.js`.
+
+
+// HEADER
+const headerImg = document.querySelector('#logo-img');
+
+
+// > Nav
+const navLinks = document.querySelectorAll('nav a');
+const navLinksArray = Array.from(navLinks);
+
+
+// CTA
+const ctaHeading = document.querySelector('.cta-text h1');
+const ctaButton = document.querySelector('.cta-text button');
+const ctaImg = document.querySelector('#cta-img');
+
+
+// MAIN CONTENT
+
+// > Top Content
+const topText = document.querySelectorAll('.text-content');
+const topTextArray = Array.from(topText);
+
+const topTextFirst = topTextArray[0];
+const topTextSecond = topTextArray[1];
+
+// > Middle Content
+const middleImg = document.querySelector('.middle-img');
+
+// > Bottom Content
+const bottomText = document.querySelectorAll('.text-content');
+const bottomTextArray = Array.from(bottomText);
+
+const bottomTextFirst = bottomTextArray[0];
+const bottomTextSecond = bottomTextArray[1];
+const bottomTextThird = bottomTextArray[2];
+
+
+// CONTACT
+const contactHeader = document.querySelector('.contact h4');
+const address = document.querySelector('.contact p:nth-of-type(1)');
+const phone = document.querySelector('.contact p:nth-of-type(2)');
+const email = document.querySelector('.contact p:nth-of-type(3)');
+
+
+// FOOTER
+const footerLink = document.querySelector('footer a');
